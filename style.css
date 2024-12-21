@@ -1,0 +1,130 @@
+/* const APIURL = 'https://api.github.com/users/'; */
+
+/* General reset */
+*{
+ padding: 0;
+ margin: 0;
+box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:#161b22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.user-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#search {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 2px solid black ;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+#search:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Profile Card Styles */
+.card {
+    background-color: white;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card img.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+}
+
+.user-info {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.user-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.user-info p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.user-info ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.user-info ul li {
+    font-size: 16px;
+}
+
+.user-info ul li strong {
+    font-weight: bold;
+}
+
+#repos {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.repo {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    width: 150px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.repo:hover {
+    background-color: #0056b3;
+}
+
+/* Error Card Styles */
+.card h1 {
+    color: #f44336;
+    text-align: center;
+}
+
+/* Loading Spinner */
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #007bff;
+}
